@@ -11,7 +11,7 @@ switch(user) {
         break;
         
     case 'SPEND':
-        if(amount = 4 && <=10){
+        if(amount = 4 && <=10){  // your issue is here.  the <= 10 doesn't have a value to compare to.  I assume you mean "amount <= 10"
             console.log("Opps!");
         }
         else{
