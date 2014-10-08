@@ -1,0 +1,27 @@
+var user = prompt("Quickly! You have just won $1k. Do you SPEND, DONATE, or INVEST the money?").toUpperCase();
+var amount = prompt("Okay, how much? 0 = NONE , 1 = SOME 2= All");
+switch(user) {
+    case 'DONATE':
+        if(amount == 1 || 2) {
+        console.log("Thank you for helping a family in need!");
+        }
+        else{
+            console.log("STINGY!!");
+        }
+        break;
+        
+    case 'SPEND':
+        if(amount = 4 && <=10){
+            console.log("Opps!");
+        }
+        else{
+        console.log("Living the lavish life!");
+        }
+        break;
+        
+    case 'INVEST':
+        console.log("STOCK MARKETS CRASHED! You've lost all your money!");
+        break;
+    default:
+        console.log("You did not make the proper choice. The money has slipped through your fingers");
+}
